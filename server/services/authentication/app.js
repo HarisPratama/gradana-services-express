@@ -5,7 +5,7 @@ const app = express()
 
 const router = require('./routers')
 
-mongoose.connect('mongodb+srv://haris:LG15y28EmXq9mCwm@cluster0.r8pel.mongodb.net/gradana?authSource=admin&replicaSet=atlas-x0w6f0-shard-0&readPreference=primary&appname=MongoDB%20Compass&ssl=true', { useNewUrlParser: true, useUnifiedTopology: true, useCreateIndex: true })
+mongoose.connect('mongodb+srv://haris:LG15y28EmXq9mCwm@cluster0.r8pel.mongodb.net/gradana?retryWrites=true&w=majority', { useNewUrlParser: true, useUnifiedTopology: true, useCreateIndex: true })
 
 const db = mongoose.connection
 
